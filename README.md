@@ -1,4 +1,4 @@
-# 📊 GestaoX — Sistema de Gestão de Tarefas & Frota Logística
+# 📊 GestaoX — Tarefas & Frota 
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
