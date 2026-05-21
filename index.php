@@ -5,7 +5,6 @@ error_reporting(E_ALL);
 
 require_once 'config/Database.php';
 
-// Autoload simples (em um projeto real use o Composer)
 spl_autoload_register(function ($class_name) {
   if (file_exists('controllers/' . $class_name . '.php')) {
     require_once 'controllers/' . $class_name . '.php';
