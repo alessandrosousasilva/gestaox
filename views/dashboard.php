@@ -10,6 +10,8 @@
 <body>
   <header>
     <h1>📊 GestaoX</h1>
+
+    <!-- Menu de navegação para acessar as diferentes seções do sistema -->
     <nav>
       <a href="index.php?action=dashboard" class="active">Tarefas</a>
       <a href="index.php?action=vehicles">Gestão de Veículos (CRUD)</a>
@@ -17,12 +19,14 @@
     </nav>
   </header>
 
+  <!-- Conteúdo principal da página de dashboard, exibindo as tarefas do usuário -->
   <div class="content-wrapper">
     <div class="page-header-action">
       <h3>Suas Tarefas</h3>
       <a href="index.php?action=task_add" class="btn-add">+ Nova Tarefa</a>
     </div>
 
+    <!-- Lista de tarefas do usuário, cada tarefa exibe título, status e ações para editar, excluir ou mudar status -->
     <ul class="task-list">
       <?php foreach ($tasks ?? [] as $t):
         $statusClass = ($t['status'] == 'Pendente') ? 'pending' : 'completed';

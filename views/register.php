@@ -8,6 +8,8 @@
 </head>
 
 <body>
+
+  <!-- Página de registro do sistema, onde os novos usuários podem criar uma conta para acessar o dashboard -->
   <div class="auth-wrapper">
     <div class="auth-card">
       <div class="auth-logo">
@@ -15,6 +17,7 @@
       </div>
       <div class="auth-subtitle">Cadastro de Usuário</div>
 
+      <!-- Formulário de registro, onde os usuários inserem nome, e-mail e senha para criar uma nova conta -->
       <form method="POST" action="index.php?action=register">
         <div class="form-group">
           <label>Nome:</label>

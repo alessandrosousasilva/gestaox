@@ -1,9 +1,11 @@
 <?php
-class Database
+class Database // Conexão com o banco de dados
 {
+  // Implementação do padrão Singleton para garantir uma única conexão
   private static $instance = null;
   private $conn;
 
+  // O construtor é privado para evitar instâncias diretas
   private function __construct()
   {
     try {
@@ -14,6 +16,7 @@ class Database
     }
   }
 
+  // Método estático para obter a instância da conexão
   public static function getInstance()
   {
     if (!self::$instance) {

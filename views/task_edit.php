@@ -16,12 +16,15 @@ if (!isset($task)) {
   <header>
     <h1>📊 GestaoX</h1>
     <nav>
+
+      <!-- Menu de navegação para acessar as diferentes seções do sistema -->
       <a href="index.php?action=dashboard" class="active">Tarefas</a>
       <a href="index.php?action=vehicles">Gestão de Veículos (CRUD)</a>
       <a href="index.php?action=logout" class="logout">Sair</a>
     </nav>
   </header>
 
+  <!-- Conteúdo principal da página de edição de tarefa, onde o usuário pode atualizar o título da tarefa existente -->
   <div class="content-wrapper">
     <div class="auth-card" style="margin-top: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
       <h2 style="margin-bottom: 25px; color: var(--primary-color);">Editar Tarefa</h2>

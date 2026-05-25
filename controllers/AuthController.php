@@ -1,6 +1,10 @@
 <?php
+
+// Controlador para autenticação de usuários
 class AuthController
 {
+
+  // Exibe o formulário de login e processa o login
   public function login()
   {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -18,6 +22,7 @@ class AuthController
     require 'views/login.php';
   }
 
+  // Exibe o formulário de registro e processa o registro
   public function register()
   {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -29,6 +34,7 @@ class AuthController
     require 'views/register.php';
   }
 
+  // Processa o logout do usuário
   public function logout()
   {
     session_destroy();

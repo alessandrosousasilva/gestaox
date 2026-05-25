@@ -1,5 +1,5 @@
 /* =========================================
-   assets/style.css - O NOVO DESIGN
+   assets/style.css
    ========================================= */
 
 /* --- 1. Reset e Tipografia --- */
@@ -12,23 +12,19 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f0f4f8; /* Cinza claro suave */
+  background-color: #f0f4f8;
   color: #333;
   line-height: 1.6;
 }
 
-/* --- Estilos Exclusivos para Login e Cadastro --- */
+/* --- Estilos para Login e Cadastro --- */
 .auth-wrapper {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: linear-gradient(
-    135deg,
-    #e0eafc 0%,
-    #cfdef3 100%
-  ); /* Fundo degradê elegante */
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
 }
 
 .auth-card {
@@ -144,7 +140,7 @@ body {
 
 /* --- 2. Cores e Utilitários --- */
 :root {
-  --primary-color: #2146c7; /* Azul profissional moderno */
+  --primary-color: #2146c7;
   --accent-color: #0d9488; /* Teal para ações positivas */
   --warning-color: #e67e22; /* Laranja para pendente */
   --success-color: #2ecc71; /* Verde para concluída */
@@ -169,7 +165,7 @@ a:hover {
   color: color-mix(in srgb, var(--primary-color), white 20%);
 }
 
-/* --- 3. Header e Navegação (Presente em todas as telas logadas) --- */
+/* --- 3. Header e Navegação (Em todas as telas logadas) --- */
 header {
   background-color: var(--card-bg);
   padding: 15px 40px;

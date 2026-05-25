@@ -8,6 +8,8 @@
 </head>
 
 <body>
+
+  <!-- Página de login do sistema, onde os usuários podem inserir suas credenciais para acessar o dashboard -->
   <div class="auth-wrapper">
     <div class="auth-card">
       <div class="auth-logo">
@@ -15,6 +17,7 @@
       </div>
       <div class="auth-subtitle">Login no Sistema</div>
 
+      <!-- Exibe mensagem de erro caso as credenciais sejam inválidas -->
       <?php if (isset($erro)) echo "<div class='error-msg'>$erro</div>"; ?>
 
       <form method="POST" action="index.php?action=login">

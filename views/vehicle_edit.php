@@ -18,6 +18,8 @@ $vehicle = $vehicle ?? [
 <body>
   <header>
     <h1>📊 GestaoX</h1>
+
+    <!-- Menu de navegação para acessar as diferentes seções do sistema -->
     <nav>
       <a href="index.php?action=dashboard">Tarefas</a>
       <a href="index.php?action=vehicles" class="active">Gestão de Veículos (CRUD)</a>
@@ -25,6 +27,7 @@ $vehicle = $vehicle ?? [
     </nav>
   </header>
 
+  <!-- Conteúdo principal da página de edição de veículo, onde o usuário pode atualizar as informações do veículo existente -->
   <div class="content-wrapper">
     <div class="auth-card" style="margin-top: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
       <h2 style="margin-bottom: 25px; color: var(--primary-color);">Editar Veículo</h2>
