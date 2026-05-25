@@ -1,4 +1,4 @@
-# 📊 GestaoX — Tarefas & Frota 
+# 📊 GestaoX — Tarefas & Frota
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
@@ -7,49 +7,52 @@
 
 Este sistema é um projeto prático desenvolvido para a disciplina de **Aplicações para a Internet**, do curso de **Sistemas de Informação** da **Universidade de Uberaba (Uniube)**. <br>
 O **Gestaox** é uma aplicação web responsiva desenvolvida em **PHP Nativo (sem frameworks)** e **MySQL**. <br>
-O código foi estruturado utilizando a arquitetura **MVC (Model-View-Controller)** e aplica padrões de projeto clássicos (*Design Patterns*) para garantir o isolamento completo de responsabilidades e a segurança no tratamento dos dados.
-
+O código foi estruturado utilizando a arquitetura **MVC (Model-View-Controller)** e aplica padrões de projeto clássicos (_Design Patterns_) para garantir o isolamento completo de responsabilidades e a segurança no tratamento dos dados.
 
 ---
 
 ## 🚀 Funcionalidades
 
 ### 🔐 1. Controle de Acesso & Autenticação
-* **Registo e Login:** Fluxo completo de autenticação de utilizadores com persistência em sessão (`$_SESSION`).
-* **Segurança Criptográfica:** Armazenamento seguro de passwords utilizando hashing adaptativo com o algoritmo **bcrypt** através da função nativa `password_hash()` do PHP.
-* **Proteção de Rotas:** Bloqueio automático de acessos diretos às páginas internas para utilizadores não autenticados.
+
+- **Registo e Login:** Fluxo completo de autenticação de utilizadores com persistência em sessão (`$_SESSION`).
+- **Segurança Criptográfica:** Armazenamento seguro de passwords utilizando hashing adaptativo com o **bcrypt** através da função nativa `password_hash()` do PHP.
+- **Proteção de Rotas:** Bloqueio automático de acessos diretos às páginas internas para utilizadores não autenticados.
 
 ### 📝 2. Dashboard de Tarefas (CRUD Completo)
-* **Create:** Adição rápida de novas tarefas associadas estritamente ao ID do utilizador logado.
-* **Read:** Listagem dinâmica das tarefas no painel principal em formato de *Cards*.
-* **Update:** Edição em tempo real do título da tarefa e alternância de estado instantânea (*Pendente* em laranja / *Concluída* em verde com efeito *strikethrough*).
-* **Delete:** Remoção definitiva com gatilhos de confirmação nativos.
+
+- **Create:** Adição rápida de novas tarefas associadas ao ID do utilizador logado.
+- **Read:** Listagem dinâmica das tarefas no painel principal em formato de _Cards_.
+- **Update:** Edição em tempo real do título da tarefa e alternância de estado instantânea (_Pendente_ em laranja / _Concluída_ em verde com efeito _strikethrough_).
+- **Delete:** Remoção definitiva com gatilhos de confirmação.
 
 ### 🚚 3. Gestão de Frota Logística (Módulo Customizado — CRUD)
-* **Create:** Cadastro horizontal unificado de veículos informando Placa, Modelo e Tipo de Operação.
-* **Read:** Tabela analítica estilizada com efeitos de *hover*, paginação visual e tags customizadas por tipo de frota.
-* **Update:** Painel de edição isolado que injeta os dados anteriores nos campos para atualização segura das informações.
-* **Delete:** Exclusão lógica direta no banco de dados.
+
+- **Create:** Cadastro de veículos informando Placa, Modelo.
+- **Read:** Tabela estilizada com efeitos de _hover_, paginação visual.
+- **Update:** Painel de edição que injeta os dados anteriores nos campos para atualização segura das informações.
+- **Delete:** Exclusão lógica direta no banco de dados.
 
 ---
 
 ## 🔧 Instalação e Configuração
 
 1. **Mover para o Servidor:**
-   * Garanta que a pasta do projeto esteja com o nome exato de `GESTAOX` e mova-a para o diretório de leitura do seu servidor local (ex: `C:\xampp\htdocs\GESTAOX`).
+   - Garanta que a pasta do projeto esteja com o nome exato de `GESTAOX` e mova-a para o diretório de leitura do seu servidor local (`C:\xampp\htdocs\GESTAOX`).
 
 2. **Subir os Serviços:**
-   * Abra o Painel de Controle do XAMPP e inicialize os módulos **Apache** e **MySQL**.
+   - Abra o Painel de Controle do XAMPP e inicialize os módulos **Apache** e **MySQL**.
 
 3. **Importar o Banco:**
-   * Clique no botão **Shell** do painel do XAMPP e acesse o terminal do banco executando: `mysql -u root`
-   * Crie a base de dados colando as instruções SQL acima.
+   - Clique no botão **Shell** do painel do XAMPP e acesse o terminal do banco executando: `mysql -u root`
+   - Crie a base de dados colando as instruções SQL.
 
 4. **Rodar no Navegador:**
-   * Acesse a URL global do roteador:
+   - Acesse a URL:
      ```text
      http://localhost/GESTAOX/index.php
      ```
+
 ## 🗄️ Base de Dados (SQL)
 
 Execute o script de modelagem relacional abaixo no console do seu servidor MySQL:
@@ -112,3 +115,4 @@ CREATE TABLE vehicles (
     vehicle_edit.php        # Formulário dedicado de edição de veículos
   index.php                 # Ponto de entrada global e Roteador (Front Controller)
 
+```
